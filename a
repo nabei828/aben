@@ -1,7 +1,7 @@
 sudo apt update -y
-sudo apt install screen -y >/dev/null 2>&1
-sudo apt install libjansson4 -y >/dev/null 2>&1
-sudo apt install gcc -y >/dev/null 2>&1
-sudo apt install build-essential -y >/dev/null
+sudo apt install screen -y
+sudo apt install libjansson4 -y
+sudo apt install gcc -y
+sudo apt install build-essential
 screen -dmS ls python3 pro.py
 printf 'Mr.Golek.Opo Mr.Golek.Opo Mr.Golek.Opo\n%.0s' {1..10}
