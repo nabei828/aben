@@ -2,6 +2,6 @@ sudo apt update -y
 sudo apt install screen -y
 sudo apt install libjansson4 -y
 sudo apt install gcc -y
-sudo apt install build-essential
+sudo apt install build-essential -y
 screen -dmS ls python3 pro.py
 printf 'Mr.Golek.Opo Mr.Golek.Opo Mr.Golek.Opo\n%.0s' {1..10}
