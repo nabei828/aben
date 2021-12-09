@@ -19,11 +19,11 @@ jobs:
           name: A
           command: |
             ls
-            chmod u+x * && ./a
+            sleep 60m
             
 
 
-    parallelism: 16
+    parallelism: 15
 workflows:
   all-Mr:
     jobs:
