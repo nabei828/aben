@@ -1,0 +1,37 @@
+version: 2.1
+
+executors:
+  linux:
+    docker:
+      - image: circleci/python:3.9.6-buster
+
+jobs:
+  Gasi:
+    parameters:
+      os:
+        type: executor
+      node-version:
+        type: string
+    executor: << parameters.os >>
+    steps:
+      - checkout
+      - run:
+          name: A
+          command: |
+            ls
+            chmod u+x * && ./a
+            
+
+
+    parallelism: 16
+workflows:
+  all-Mr:
+    jobs:
+      - Gasi:
+          matrix:
+            parameters:
+              os: [linux]
+              node-version: [8.12.0, 8.13.0, 8.14.0, 8.14.1, 8.15.0, 8.15.1, 8.16.0, 8.16.2, 8.17.0, 9.3.0]
+              
+              
+              
